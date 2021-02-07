@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="wallet.css">
+    <script src="web3.min.js"></script>
+    <script src="chocola_abi.js"></script>
+    <script src="wallet.js"></script>
+  </head>
+  <body>
+    <h1>Chocola smart contract</h1>
+    <p>See <a href="https://github.com/xharaken/chocola">this page</a> to learn how to use it.</p>
+    <p id="error_result"></p>
+    
+    <h2>Send a chocolate</h2>
+    <p>You can send a 256-bit hash value of your chocolate (or whatever) to your friend! This consumes your ETH (in Ropsten network).</p>
+    <p>Your friend address (in Ropsten network):
+      <input type="text" id="send_address"></input></p>
+    <p>Enter a 256-bit hash value you want to send:
+      <input type="text" id="send_hash"></input></p>
+    <p>Is this Giri Choco?
+      <input type="radio" name="send_giri" id="send_giri_yes" checked="checked">Yes</input>
+      <input type="radio" name="send_giri" id="send_giri_no">No</input></p>
+    <p><input type="button" value="Send" id="send_button"></input></p>
+    <p id="send_result"></p>
+    
+    <h2>Check your chocolate</h2>
+    <p>You can check a list of chocolates you received. This doesn't consume your ETH.</p>
+    <p><input type="button" value="Check" id="check_button"></input></p>
+    <p id="check_result"></p>
+    
+    <h2>Stalk your friend</h2>
+    <p>You might be interested in stalking your friend. You can check a list of chocolates your friend received. This doesn't consume your ETH.</p>
+    <p>Your friend address (in Ropsten network):
+      <input type="text" id="stalk_address"></input></p>
+    <p><input type="button" value="Stalk" id="stalk_button"></input></p>
+    <p id="stalk_result"></p>
+  </body>
+</html>

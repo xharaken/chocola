@@ -1,0 +1,18 @@
+h1 {
+  background: #eaf3ff;
+}
+
+h2 {
+  background: #eaf3ff;
+  border-bottom: solid 3px #516ab6;
+}
+
+.success {
+  background: #eaf3ff;
+  padding: 10px;
+}
+
+.error {
+  background: #ffe4e1;
+  padding: 10px;
+}
